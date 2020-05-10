@@ -1,5 +1,6 @@
 from app import app
-    
+
+
 class TestApp:
 
     def test_api(self):

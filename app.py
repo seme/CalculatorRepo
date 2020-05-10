@@ -5,10 +5,12 @@ from calculator import multiply
 
 app = Flask(__name__)
 
+
 @app.route("/<number>")
-def calculate(number):    
+def calculate(number):
     response = multiply(int(number), 40)
     return str(response)
+
 
 @app.route("/")
 def info():
